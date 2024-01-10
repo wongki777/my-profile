@@ -114,7 +114,7 @@ section {
     -webkit-text-stroke: 0vw lime;
     border-right: 1px solid var(--bg-color);
     overflow: hidden;
-    animation: animate 6s linear infinite;
+    animation: animate 7s linear;
     white-space: nowrap;
 }
 
@@ -139,12 +139,47 @@ section {
     font-weight: 700;
     color: transparent;
     color: #ee5166;
+    animation: 4s anim-lineUp ease-out;
 }
-
+@keyframes anim-lineUp {
+    0% {
+      opacity: 0;
+      transform: translateY(80%);
+    }
+    20% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
 .home-content p {
     font-size: 1.6rem;
     margin: 2rem 0 4rem;
+    animation: 4s anim-lineUp ease-out;
 }
+@keyframes anim-lineUp {
+    0% {
+      opacity: 0;
+      transform: translateY(80%);
+    }
+    20% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
 
 .btn-box {
     position: relative;
@@ -171,7 +206,26 @@ section {
     z-index: 1;
     overflow: hidden;
     transition: .5s;
+    animation: 4s anim-lineUp ease-out;
 }
+
+@keyframes anim-lineUp {
+    0% {
+      opacity: 0;
+      transform: translateY(80%);
+    }
+    20% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
 
 .btn-box .btn:hover {
     color: var(--main-color);
@@ -332,6 +386,7 @@ span {
 
 .about-content h2 {
     color: var(--text-color-two);
+   
 }
 
 .about-content h3 {
